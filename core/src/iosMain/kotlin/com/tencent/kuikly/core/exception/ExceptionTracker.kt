@@ -17,7 +17,7 @@
 package com.tencent.kuikly.core.exception
 
 import com.tencent.kuikly.core.manager.BridgeManager
-import kotlin.native.concurrent.AtomicReference
+import kotlin.concurrent.AtomicReference
 import kotlin.native.concurrent.freeze
 
 object ExceptionTracker {
