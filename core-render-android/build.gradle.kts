@@ -5,7 +5,7 @@ plugins {
 }
 
 group = MavenConfig.GROUP
-version = Version.getRenderVersion()
+version = Version.getCoreVersion()
 
 afterEvaluate {
     publishing {
@@ -37,6 +37,7 @@ afterEvaluate {
 }
 
 android {
+    namespace = "com.tencent.kuikly.core.render.android"
     compileSdk = 34
 
     defaultConfig {
@@ -58,9 +59,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
+//    kotlinOptions {
+//        jvmTarget = "1.8"
+//    }
 }
 
 dependencies {
