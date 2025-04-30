@@ -13,6 +13,7 @@
  * limitations under the License.
  */
 
+@file:OptIn(kotlin.experimental.ExperimentalNativeApi::class)
 package com.tencent.kuikly.core.exception
 
 import com.tencent.kuikly.core.manager.BridgeManager
