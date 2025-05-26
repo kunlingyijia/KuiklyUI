@@ -1,0 +1,52 @@
+PODS:
+  - demo (1.0)
+  - libpag (4.3.71)
+  - Masonry (1.1.0)
+  - OpenKuiklyIOSRender (2.0.0):
+    - OpenTDFCommon (~> 1.0.0)
+  - OpenTDFCommon (1.0.0)
+  - SDWebImage (5.20.1):
+    - SDWebImage/Core (= 5.20.1)
+  - SDWebImage/Core (5.20.1)
+  - WMPlayer (5.1.0):
+    - Masonry
+
+DEPENDENCIES:
+  - demo (from `../demo`)
+  - libpag (~> 4.3.21)
+  - OpenKuiklyIOSRender (from `../`)
+  - SDWebImage (~> 5.20.1)
+  - WMPlayer (from `https://github.com/zhengwenming/WMPlayer.git`)
+
+SPEC REPOS:
+  trunk:
+    - libpag
+    - Masonry
+    - OpenTDFCommon
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  demo:
+    :path: "../demo"
+  OpenKuiklyIOSRender:
+    :path: "../"
+  WMPlayer:
+    :git: https://github.com/zhengwenming/WMPlayer.git
+
+CHECKOUT OPTIONS:
+  WMPlayer:
+    :commit: 92bf48cd9599f0926101d2dc94c67e94d43412e0
+    :git: https://github.com/zhengwenming/WMPlayer.git
+
+SPEC CHECKSUMS:
+  demo: fea5e8fe28b72c9d3f4349cc4ff4b7e17cfac2cb
+  libpag: ef557e782d9b1b8c694d7031977ac524f1b99260
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OpenKuiklyIOSRender: b19fe6518b7a8dccf0def7650f8bf689ca617356
+  OpenTDFCommon: f78e0063ea2f9d35807629b21901e173a6b1d93d
+  SDWebImage: 33d0f23bddeb5d209ae959153883247be6703713
+  WMPlayer: 89573e4b19f752bda7752dc81f9d9b06512770d6
+
+PODFILE CHECKSUM: fbe13e65a67c4ef89070766bf8ce6a2393fe0efa
+
+COCOAPODS: 1.16.2
