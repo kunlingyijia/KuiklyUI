@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace = "com.tencent.kuikly.android.demo"
     compileSdk = 32
     defaultConfig {
         applicationId = "com.tencent.kuikly.android.demo"

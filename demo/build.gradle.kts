@@ -34,7 +34,7 @@ kotlin {
     val commonMain by sourceSets.getting {
         dependencies {
             implementation(project(":core"))
-            compileOnly(project(":core-annotations"))
+            implementation(project(":core-annotations"))
         }
     }
 
@@ -111,6 +111,7 @@ dependencies {
 }
 
 android {
+    namespace = "com.tencent.kuikly.demo"
     compileSdk = 30
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {

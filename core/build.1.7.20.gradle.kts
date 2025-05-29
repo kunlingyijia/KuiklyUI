@@ -33,32 +33,27 @@ kotlin {
     // targetes
     jvm()
 
-    androidTarget {
+    android {
         publishLibraryVariantsGroupedByFlavor = true
         publishLibraryVariants("release")
     }
 
+    ios()
     iosSimulatorArm64()
     iosX64()
-    iosArm64()
-
 
     // sourceSets
     val commonMain by sourceSets.getting
 
-    sourceSets.iosMain {
+    val iosMain by sourceSets.getting {
         dependsOn(commonMain)
     }
-
-//    val iosMain by sourceSets.creating {
-//        dependsOn(commonMain)
-//    }
 
     targets.withType<KotlinNativeTarget> {
         val mainSourceSets = this.compilations.getByName("main").defaultSourceSet
         when {
             konanTarget.family.isAppleFamily -> {
-                mainSourceSets.dependsOn(sourceSets.getByName("iosMain"))
+                mainSourceSets.dependsOn(iosMain)
             }
         }
     }
@@ -77,7 +72,6 @@ kotlin {
 }
 
 android {
-    namespace = "com.tencent.kuikly.core"
     compileSdk = 30
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
