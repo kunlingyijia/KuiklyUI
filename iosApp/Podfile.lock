@@ -39,7 +39,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/zhengwenming/WMPlayer.git
 
 SPEC CHECKSUMS:
-  demo: fea5e8fe28b72c9d3f4349cc4ff4b7e17cfac2cb
+  demo: 0962dd351d95308754659ca75346e347cd1d98d5
   libpag: ef557e782d9b1b8c694d7031977ac524f1b99260
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OpenKuiklyIOSRender: b19fe6518b7a8dccf0def7650f8bf689ca617356
